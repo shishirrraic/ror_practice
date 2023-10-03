@@ -5,11 +5,11 @@
 <div id="works">
   <% @works.each do |work| %>
     <%= render work %>
-    <p class = "work_container_options">
+    <p class = "work_container_option">
       <%= link_to "Show this work", work %>
     </p>
   <% end %>
 </div>
-<p class = "work_container_options">
+<p class = "work_container_option">
 <%= link_to "New work", new_work_path %>
 </p>

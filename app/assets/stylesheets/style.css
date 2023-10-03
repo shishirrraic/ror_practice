@@ -100,6 +100,17 @@ nav a:hover {
     font-size: 40px;
 }
 
+.work_container_option{
+    color:  #466783;
+    font-size: 1em;
+    text-align: center;
+}
+
+.work_container_body{
+    color:  #466783;
+    font-size: 1em;
+    text-align: center;
+}
 
 .work_container_title {
     color:  #466783;
@@ -142,11 +153,7 @@ nav a:hover {
     margin: 4vh;
     text-align: center;
 }
-.skill_container_options{
-    color:  #466783;
-    font-size: 1em;
-    text-align: center;
-}
+
 
 
 .modal {
