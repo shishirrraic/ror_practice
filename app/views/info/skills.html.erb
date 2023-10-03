@@ -1,0 +1,29 @@
+<%= turbo_frame_tag "modal" do%>
+    <div class = "modal">
+        
+        <table class = "modal_table">
+            <thead>
+            <tr>
+                <th> Name </th>
+                <th> Experience </th>
+            </tr>
+            </thead>
+            <tbody>
+            <% @skills.each do |skill| %>
+            <tr>
+                <td><%= skill.name%></td>
+                <td><%= skill.experience%></td>
+            </tr>
+            <% end %>
+           
+            </tbody>
+        </table>
+        <p class = "modal_table_link">
+        <%= link_to "Close", "#", data:{
+            controller: "modals",
+            action: "modals#close"
+        },class: "skill_container_options"%>
+        </p>
+    </div>
+
+<% end %>

@@ -147,3 +147,37 @@ nav a:hover {
     font-size: 1em;
     text-align: center;
 }
+
+
+.modal {
+    position: fixed;
+    padding: 2em;
+
+	opacity: 1;
+    
+    /* Centering */
+    left: 50%;
+    top: 50%;
+
+    overflow: auto;
+    background-color: white;
+    border-radius: 5px;
+	border-color: #466783;
+	border-style: solid;
+    /* Add the drop shadow */
+
+
+}
+
+.modal_table{
+	background: white;
+	font-size: 15pt;
+	border-collapse: separate;
+	border-spacing: 20px 0;
+	color:  #466783;
+	
+}
+.modal_table_link{
+	margin-top: 15px;
+  	text-align: center;
+}
