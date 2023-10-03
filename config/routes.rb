@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :skills
   get 'info/index'
   root "info#index"
   resources :works
