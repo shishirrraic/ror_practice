@@ -65,6 +65,6 @@ class WorksController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def work_params
-      params.require(:work).permit(:title, :body, :image_data)
+      params.require(:work).permit(:title, :body, :image)
     end
 end
