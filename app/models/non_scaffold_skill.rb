@@ -1,0 +1,2 @@
+class NonScaffoldSkill < ApplicationRecord
+end
