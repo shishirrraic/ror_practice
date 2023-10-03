@@ -2,9 +2,9 @@
 
 <%= render @skill %>
 
-<div>
+<div class = "skill_container_option">
   <%= link_to "Edit this skill", edit_skill_path(@skill) %> |
   <%= link_to "Back to skills", skills_path %>
-
+  <br><br>
   <%= button_to "Destroy this skill", @skill, method: :delete %>
 </div>
