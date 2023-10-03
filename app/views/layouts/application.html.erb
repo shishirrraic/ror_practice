@@ -11,6 +11,19 @@
   </head>
 
   <body>
+    <% if current_page?("/works")%>
+    <div class = "long_card">
+    <% else %>
+    <div class = "card">
+    <% end %>
+      <nav>
+        <ul>
+          <li><%= link_to "Home", "/"%></li>
+          <li><%= link_to "My work", "/works"%></li>
+        </ul>
+      </nav>
+
     <%= yield %>
+    </div>
   </body>
 </html>

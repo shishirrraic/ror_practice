@@ -1,8 +1,10 @@
 <p style="color: green"><%= notice %></p>
 
 <%= render @work %>
-
-<div>
+<div class = "work_container_body">
+  <%= @work.body %>
+</div>
+<div class = "work_container_options">
   <%= link_to "Edit this work", edit_work_path(@work) %> |
   <%= link_to "Back to works", works_path %>
 

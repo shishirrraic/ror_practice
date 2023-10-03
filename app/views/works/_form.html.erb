@@ -1,5 +1,5 @@
 <%= form_with(model: work) do |form| %>
-  <% if work.errors.any? %>
+<% if work.errors.any? %>
     <div style="color: red">
       <h2><%= pluralize(work.errors.count, "error") %> prohibited this work from being saved:</h2>
 
@@ -10,23 +10,24 @@
       </ul>
     </div>
   <% end %>
-
+  <div class = "work_container_options">
   <div>
     <%= form.label :title, style: "display: block" %>
     <%= form.text_field :title %>
   </div>
-
+  <br>
   <div>
     <%= form.label :body, style: "display: block" %>
     <%= form.text_area :body %>
   </div>
-
+  <br>
   <div>
     <%= form.label :image, style: "display: block" %>
     <%= form.file_field :image %>
   </div>
-
+  <br>
   <div>
     <%= form.submit %>
+  </div>
   </div>
 <% end %>

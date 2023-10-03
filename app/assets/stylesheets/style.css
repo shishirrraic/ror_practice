@@ -41,8 +41,8 @@ nav ul li {
 nav a {
 	display: block;
 	padding: 0px;	
-	color:#737B80;
-	font-size: 0.8em;
+	color: #6494BC;
+	font-size: 1.3em;
 	font-weight: bold;
 	text-decoration:none;
 }
@@ -81,4 +81,69 @@ nav a:hover {
 	margin-top: 5vh;
 	height: auto;
 	width: 10vw;
+}
+
+.photo {
+		text-align: center;
+		margin-bottom: 5vh;
+		height: auto;
+		width: 100%; 
+	}
+	
+	.photo img {
+		margin-top: 30px;
+		width: 100%;
+		height: auto;
+	}
+
+/* Holds the elements on the "about" page */
+.about_container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 30px;
+    color:  #466783;
+    font-size: 0.8em;
+    margin: 4vh;
+}
+
+.about_container img {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+    max-height:80%;
+}
+.about_container text{
+    font-size: 40px;
+}
+
+
+.work_container_title {
+    color:  #466783;
+    font-size: 2.5em;
+    text-align: center;
+}
+.work_container {
+    align-items: center;
+    color:  #466783;
+    font-size: 0.8em;
+    margin: 4vh;
+    text-align: center;
+}
+
+.work_container img {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+    max-height:80%;
+}
+.work_container_options{
+    color:  #466783;
+    font-size: 1em;
+    text-align: center;
+}
+.work_container_body{
+    color:  #466783;
+    font-size: 1em;
+    text-align: center;
 }
