@@ -1,13 +1,11 @@
-/* Handles the fixed-size business card appearance on the center of the screen */
-.card {
+.home {
 	background-color: white;
 	box-shadow: 5px 5px 8px 5px #888888;
 	width: 100%;
 	height: 100vh;
 }
 
-/* When the card appears longer on scrollable pages it is long_card */
-.long_card {
+.works {
 	background-color: white;
 	box-shadow: 5px 5px 8px 5px #888888;
 	width: 100%;
@@ -15,7 +13,6 @@
 	padding-bottom: 40px;
 }
 
-/* navigation bar */
 nav {
 	margin: 0;
 	background-color: rgb(255, 255, 255);
@@ -47,7 +44,6 @@ nav a {
 	text-decoration:none;
 }
 
-/* when mouse hovers over nav bar, a small shadow appears behind */
 nav a:hover { 
 	text-shadow: 1px 1px #7AB2CC;
 }
@@ -64,23 +60,10 @@ nav a:hover {
 	padding-left: 40px;
 }
 
-/* The container for the "contact" page elements */
-.contact_container {
-	display: flex;
-	margin: auto;
-	flex-direction: row;
-	justify-content: space-evenly;
-}
 
 .work_container .app_img {
 	width: 100%;
 	max-width: 800px;
-}
-
-.contact_method img {
-	margin-top: 5vh;
-	height: auto;
-	width: 10vw;
 }
 
 .photo {
@@ -90,8 +73,8 @@ nav a:hover {
 		width: 100%; 
 	}
 	
-	.photo img {
-		margin-top: 30px;
+.photo img {
+	margin-top: 30px;
 		width: 100%;
 		height: auto;
 	}
