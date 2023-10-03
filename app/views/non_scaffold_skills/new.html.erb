@@ -1,18 +1,32 @@
-<h1> New Non Scaffold Skill </h1>
+<div class = "skill_container_option">
+<h1 > New Non Scaffold Skill </h1>
 
-<%= form_with model: @nsskill do |form| %>
-<div>
-  <%= form.label: name %><br>
-  <%= form.text_field :name %>
-</div>
+<%= form_with(model: @non_scaffold_skill) do |form| %>
+<% if @non_scaffold_skill.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(non_scaffold_skill.errors.count, "error") %> prohibited this skill from being saved:</h2>
 
-<div>
-  <%= form.label :experience %><br>
-  <%= form.experience :experience %>
-</div>
+      <ul>
+        <% @non_scaffold_skill.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
 
-<div>
-  <%= form.submit %>
-</div>
 
+<div class = "skill_container_option">
+    <%= form.label :name, style: "display: block" %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class = "skill_container_option">
+    <%= form.label :experience, style: "display: block" %>
+    <%= form.number_field :experience %>
+  </div>
+
+  <div class = "skill_container_option">
+    <%= form.submit %>
+  </div>
 <% end %>
+</div>

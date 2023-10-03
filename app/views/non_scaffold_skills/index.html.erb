@@ -1,10 +1,14 @@
+
 <h1 class = "skill_container_title"> Non Scaffold Skills </h1>
 
 <ul>
-  <% @nsskills.each do |nsskill| %>
+  <% @non_scaffold_skills.each do |non_scaffold_skill| %>
   <li>
-    <a href = "/nsskills/<%= nsskill.id %>">
-    <%= nsskill.name %>
+    <a href = "/non_scaffold_skills/<%= non_scaffold_skill.id %>">
+    <%= non_scaffold_skill.name %>
   </li>
   <% end %>
 </ul>
+<p class = "skill_container_option">
+  <%= link_to "New Non Scaffold Skill", new_non_scaffold_skill_path %>
+</p>

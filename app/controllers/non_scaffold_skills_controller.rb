@@ -1,22 +1,25 @@
 class NonScaffoldSkillsController < ApplicationController
   # index page
   def index
-    @nsskills = NonScaffoldSkill.all
-  end
-
-  def show
-    @nsskill = NonScaffoldSkill.find(params[:id])
+    @non_scaffold_skills = NonScaffoldSkill.all
   end
 
   def new
-    @nsskill = NonScaffoldSkill.new
+    @non_scaffold_skill = NonScaffoldSkill.new
   end
 
-  def create
-    @nsskill = NonScaffoldSkill.new(non_scaffold_skill_params)
 
-    if @nsskill.save
-      redirect_to @nsskill
+  def show
+    @non_scaffold_skill = NonScaffoldSkill.find(params[:id])
+  end
+
+
+  def create
+    @non_scaffold_skill = NonScaffoldSkill.new(non_scaffold_skill_params)
+    puts @non_scaffold_skill
+
+    if @non_scaffold_skill.save
+      redirect_to @non_scaffold_skill
     else
       render :new, status: :unprocessable_entity
     end
@@ -24,6 +27,6 @@ class NonScaffoldSkillsController < ApplicationController
 
   private
   def non_scaffold_skill_params
-    params.require(:name).permit(:name,:experience)
+    params.require(:non_scaffold_skill).permit(:name,:experience)
   end
 end
